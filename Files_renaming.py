@@ -29,13 +29,13 @@ def file_rename():
     for file in file_list:
         #os.rename(current_file_name, New name)
         #file.translate(table, charcters_to_be_removed)
+        print "Old File Name - " + file
+        print "New File Name - " + file.translate(None, "1234567890")
         os.rename(file, file.translate(None, "1234567890"))
         
     print file_list
         
-#     
-#     
-#   
-#         
-        
+      
 file_rename()
+
+
